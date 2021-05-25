@@ -1,5 +1,7 @@
 const tail = (array) => {
-    return array[array.length - 1];
+    if(array.length==0)
+        return undefined
+    return array.slice(1);
 }
 
 module.exports = tail;
