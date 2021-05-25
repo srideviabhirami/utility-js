@@ -1,4 +1,5 @@
 const {map,cube,identity,addValue} = require('./map')
+describe("Map", () => {
 
 it('should return the cube of the array [1,2,3] as [1,8,27]', () => {
         let arr = [1,2,3];
@@ -29,3 +30,5 @@ it('should return the empty array when empty array is given for map function', (
         let arrayOfObjects = [];
         expect(map(arrayOfObjects,addValue)).toEqual([]);
 });
+
+})
